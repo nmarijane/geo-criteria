@@ -1,0 +1,15 @@
+# GEO Criteria
+
+> The public reference for the criteria behind LightSpot's audits: the checks that decide whether a page is likely to be cited by an AI answer engine.
+
+## Docs
+
+- [Criteria](https://github.com/nmarijane/geo-criteria/blob/main/criteria.md): the full list of SEO and GEO criteria, with severity, pass condition, and impact or rationale.
+- [Scoring](https://github.com/nmarijane/geo-criteria/blob/main/scoring.md): points, weighting, grade bands, and skip rules.
+- [Glossary](https://github.com/nmarijane/geo-criteria/blob/main/glossary.md): definitions for the vocabulary used across this repository.
+- [README](https://github.com/nmarijane/geo-criteria/blob/main/README.md): what this repository is and how to use it.
+- [License](https://github.com/nmarijane/geo-criteria/blob/main/LICENSE): terms of reuse.
+
+## Learn more
+
+- [LightSpot](https://lightspot.ai): run the audit these criteria come from.
