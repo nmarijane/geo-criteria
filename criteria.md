@@ -38,7 +38,7 @@ G23, G24, and G25 are evaluated once for the entire site, not per page — every
 | G2 | Modular structure (Ranch-Style) | HIGH | Zero cross-references ("as mentioned above", "see below") | Sections with cross-refs get ignored |
 | G3 | Factual tables | MEDIUM | ≥1 table with numeric/comparative data | LLMs prefer structured data |
 | G4 | Answer-First (200 words) | HIGH | First 200 words directly address title topic with ≥2 keywords | **55% of citations from first 30%** |
-| G5 | Citable capsules | HIGH | ≥50% of H2 sections open with 40-60 word autonomous paragraph | **2.3× more citations** |
+| G5 | Citable capsules | HIGH | ≥50% of H2 sections open with a 40-60 word autonomous paragraph. Only H2s in the main content count (a widget heading in a sidebar or footer neither counts nor breaks a section). Skip if the page has under 100 words, or no H2 at all. | **2.3× more citations** |
 | G6 | Short paragraphs | LOW | Avg ≤4 sentences/paragraph, <10% over 5 sentences | Improves LLM extraction |
 | G7 | Attributed statistics | HIGH | ≥3 stats with named source within 50 words | **+40% AI visibility** |
 | G8 | Stats cadence | MEDIUM | 1 stat per 150-200 words | Optimal credibility density |
@@ -48,7 +48,7 @@ G23, G24, and G25 are evaluated once for the entire site, not per page — every
 | G12 | No promotional language | MEDIUM | Zero instances of: revolutionary, industry-leading, game-changer, best-in-class, cutting-edge, disruptif, leader du marché, inégalé, numéro 1, #1 (English and French equivalents) | Reduces LLM trust |
 | G13 | JSON-LD Article/BlogPosting | HIGH | Schema present with mainEntityOfPage, headline, description | — |
 | G14 | Author knowsAbout + sameAs | HIGH | Author schema has expertise domains + ≥1 verifiable profile link | — |
-| G15 | dateModified | HIGH | Present in JSON-LD AND ≥ datePublished | — |
+| G15 | dateModified | HIGH | Present in JSON-LD, parseable as a real date, AND ≥ datePublished. An unparseable value (e.g. a literal `YYYY-MM-DD` placeholder) fails. Skip if the page carries no Article schema. | — |
 | G16 | FAQPage schema (nested) | HIGH | If FAQ content exists → FAQPage nested in Article schema. Skip if no FAQ. | — |
 | G17 | Connected entities (@graph) | LOW | ≥2 entity types linked via @graph | — |
 | G18 | Content freshness | MEDIUM | Last modified < 90 days | **76% of Perplexity citations from content < 30 days** |
