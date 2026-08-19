@@ -7,9 +7,13 @@ Maintained by LightSpot ([lightspot.ai](https://lightspot.ai)).
 It documents **46 criteria** — **21 SEO** and **25 GEO** (Generative Engine Optimization) — each with its severity, its pass condition, and, where available, its impact or rationale.
 
 - `criteria.md` — the full list of criteria and recommendations.
-- `scoring.md` — how those criteria combine into a score: points, weighting, grade bands, skip rules.
+- `scoring.md` — how those criteria combine into a score: points, weighting, grade bands, skip rules, applicability by page type.
 - `glossary.md` — the vocabulary used across this repository.
 - `llms.txt` — a machine-readable summary of this repository, placed at its root.
+
+## Not covered here
+
+The audit also runs two further families of checks, documented elsewhere rather than in this repository: **accessibility** (12 checks, reported separately and not part of the score above) and **merchant compliance** (12 criteria, a conditional axis that applies to e-commerce sites only, scored on its own scale). Neither affects the scoring described in `scoring.md`.
 
 ## License
 
